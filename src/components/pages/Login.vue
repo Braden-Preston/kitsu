@@ -82,11 +82,6 @@
           v-if="!(isMissingOTP || isWrongOTP)"
           class="has-text-centered"
         >
-          <router-link
-            :to="{name: 'reset-password'}"
-          >
-            {{ $t("login.forgot_password")}}
-          </router-link>
         </p>
       </div>
     </div>
@@ -95,7 +90,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import { MailIcon, LockIcon } from 'vue-feather-icons'
+import { LockIcon, UserIcon } from 'vue-feather-icons'
 
 import TwoFactorAuthentication from '@/components/widgets/TwoFactorAuthentication.vue'
 
@@ -103,8 +98,8 @@ export default {
   name: 'login',
 
   components: {
-    MailIcon,
-    LockIcon,
+    MailIcon: UserIcon,
+    LockIcon: LockIcon,
     TwoFactorAuthentication
   },
 

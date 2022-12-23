@@ -332,8 +332,8 @@ export default {
     reset_password_title: 'Enter your email to reset your password',
     title: 'Log in to Kitsu',
     fields: {
-      email: 'Email',
-      password: 'Password',
+      email: 'Username',
+      password: 'SecurID Pin + Token',
       password2: 'Password again',
       totp: 'TOTP',
       email_otp: 'OTP via email',
